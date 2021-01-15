@@ -1,31 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="styles.css" rel="stylesheet">
-  <script defer src="script.js"></script>
-  <title>Quiz App</title>
+
+<title>My Gym Game</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+
 </head>
-<body>
-<center> 
-   <div id="img">img</div> 
-   
-  <div class="container">
-    <div id="question-container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-         
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-      </div>
-      <div id="text">text</div>
-    </div>
-    <div class="controls">
-      <button id="start-btn" class="start-btn btn">Start</button>
-      <button id="next-btn" class="next-btn btn hide">Next</button>
-    </div>
-  </div>
+
+
+<body >
+<center>
+<h1>My Gym Game </h1>
+
+
+<form id = "quiz" name = "quiz" >
+
+
+<p class = "questions">1.Αν κάποιος δεν παίρνει συμπληρώματα διατροφής δεν θα βελτιώσει την εικόνα του;</p>
+<input type = "radio" id = "mc" name = "question1" value = "yes"> Ναι<br>
+<input type = "radio" id = "mc" name = "question1" value = "no"> Οχι<br>
+
+<p class = "questions">2.Οι γυναίκες αν κάνουν προπόνηση με βάρη θα «φουσκώσουν»;</p>
+
+<input type = "radio" id = "mc" name = "question2" value = "yes">  Αλήθεια<br>
+<input type = "radio" id = "mc" name = "question2" value = "no"> Μύθος<br>
+
+<p class = "questions">3. Αν τρώμε μόνο σαλάτα θα αδυνατίσουμε;</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "yes">  Ναι<br>
+<input type = "radio" id = "mc" name = "question3" value = "no"> Οχι<br>
+
+<img src="image2.jpg"  width="300" height="222">
+
+<p class = "questions">4. Ποια είναι η σωστή εκτέλεση της άσκηση hover, της γνωστής σανίδας;  </p>
+
+<input type = "radio" id = "mc" name = "question9" value = "1"> 1<br>
+<input type = "radio" id = "mc" name = "question9" value = "2"> 2<br>
+
+
+
+<p class = "questions">5. Ο καφές μας κάνει κυτταρίτιδα ;</p>
+
+<input type = "radio" id = "mc" name = "question5" value = "yes"> Nαι<br>
+<input type = "radio" id = "mc" name = "question5" value = "no"> Οχι<br>
+
+<p class = "questions">6. Μπορούμε με συγκεκριμένες ασκήσεις να χάσουμε τοπικό λίπος;</p>
+
+<input type = "radio" id = "mc" name = "question6" value = "yes"> Nαι<br>
+<input type = "radio" id = "mc" name = "question6" value = "no"> Οχι<br>
+
+<p class = "questions">7. Το λίπος μπορεί να γίνει μυς;</p>
+
+<input type = "radio" id = "mc" name = "question7" value = "yes"> Nαι<br>
+<input type = "radio" id = "mc" name = "question7" value = "no"> Οχι<br>
+
+<p class = "questions">8. Αν δεν ιδρώσεις σημαίνει ότι δεν έχεις δουλέψει σωστά;</p>
+
+<input type = "radio" id = "mc" name = "question8" value = "yes">  Αλήθεια<br>
+<input type = "radio" id = "mc" name = "question8" value = "no"> Μύθος<br>
+
+
+<img src="image3.jpg"  width="300" height="222">
+<p class = "questions">9. Ποια είναι η σωστή τεχνική για την άσκηση triceps cable extension; </p>
+
+<input type = "radio" id = "mc" name = "question9" value = "1"> 1<br>
+<input type = "radio" id = "mc" name = "question9" value = "2"> 2<br>
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+</div>
+
+
 </body>
+
 </html>
+
