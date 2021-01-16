@@ -1,20 +1,25 @@
-
+/***********************************************
+* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+* This notice and footnote must stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+***********************************************/
 
 //Enter total number of questions:
-var totalquestions=9
+var totalquestions=10
 
 //Enter the solutions corresponding to each question:
 var correctchoices=new Array()
-correctchoices[1]='b' 
-correctchoices[2]='b' 
-correctchoices[3]='a'
-correctchoices[4]='b'
-correctchoices[5]='b'
-correctchoices[6]='b'
+correctchoices[1]='c' //question 1 solution
+correctchoices[2]='a' //question 2 solution, and so on.
+correctchoices[3]='c'
+correctchoices[4]='c'
+correctchoices[5]='c'
+correctchoices[6]='c'
 correctchoices[7]='b'
 correctchoices[8]='b'
-correctchoices[9]='b'
-
+correctchoices[9]='c'
+correctchoices[10]='b'
 
 /////Don't edit beyond here//////////////////////////
 
@@ -60,13 +65,17 @@ wrong=1
 }
 if (wrong==1){
 win2.document.write("Question "+i+"="+correctchoices[i].fontcolor("red")+"<br>")
+      if (i == 1){
+		win2.document.write("<h5>Note:Τα συμπληρώματα απλά συμπληρώνουν ένα πρόγραμμα όταν κάποιος δεν μπορεί να το έχει από το φαγητό. Δεν αντικαθιστούν τη διατροφή και την προπόνηση. Αν ο ασκούμενος έχει μια σωστή διατροφή ανάλογα με το επίπεδο και τον στόχο του, παίρνει τα απαραίτητα συστατικά από το φαγητό.")
+   }
+
+
 wrong=0
 }
 else
 win2.document.write("Question "+i+"="+correctchoices[i]+"<br>")
 }
 win2.document.write('</center></font>')
-win2.document.write("<h5>Note for question 4: Μπορεί όλοι να λέμε plank, όμως plank είναι κυρίως όταν ακουμπάνε οι παλάμες! Η άσκηση που είδαμε λέγεται hover γιατί ακουμπάνε οι αγκώνες! Η Αντιγόνη είναι στο γυμναστήριο για να σε βοηθήσει να πετύχεις τη σωστή σανίδα αν δυσκολεύεσαι!</h5>")
+win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had incorrectly answered.</h5>")
 win2.document.close()
 }
-
