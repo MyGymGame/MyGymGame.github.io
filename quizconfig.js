@@ -1,9 +1,4 @@
-/***********************************************
-* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
-* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
-* This notice and footnote must stay intact for use
-* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
-***********************************************/
+
 
 //Enter total number of questions:
 var totalquestions=9
@@ -71,6 +66,7 @@ else
 win2.document.write("Question "+i+"="+correctchoices[i]+"<br>")
 }
 win2.document.write('</center></font>')
-win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had incorrectly answered.</h5><p align='center'><small>
+win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had incorrectly answered.</h5>")
 win2.document.close()
 }
+
