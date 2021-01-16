@@ -71,6 +71,12 @@ else
 win2.document.write("Question "+i+"="+correctchoices[i]+"<br>")
 }
 win2.document.write('</center></font>')
-win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had incorrectly answered.</h5><p align='center'><small><a href='http://www.javascriptkit.com' target='_new'>JavaScript Kit quiz script</a></small>")
+win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had incorrectly answered.</h5><p align='center'><small><p id="footnote" align="center"><font face="arial" size="-1">	
+
+© 2021 MYGG (Αθανασία Καραστογιάννη, Χριστίνα Κεχαγιά, Αντιγόνη Νικολαϊδου) and Athlon Gym 
+
+<br>
+Designed by
+<a href="https://www.instagram.com/vera_angelopoulou/">Barbara Angelopoulou</a></font></p></small>")
 win2.document.close()
 }
