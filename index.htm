@@ -15,6 +15,7 @@ font:normal 13px Arial;
 
 <script src="quizconfig.js">
 </script>
+
 <script>
 
 
@@ -23,24 +24,17 @@ var actualchoices=new Array()
 document.cookie="ready=yes"
 </script>
 
-
 </head>
 
 <body bgcolor="#ff6600">
 
-<!--Comments on configuring quiz script-->
-<!--Change the questions below any way you want, but make note of the following:-->
-<!--1) Perserve the <FORM> tags -->
-<!--2a) Inside each radio button, use the VALUE attribute to denote each question's choices: "a", "b", "c" etc.-->
-<!--2b) Inside each radio button, use the NAME attribute to denote which question the button belongs to ("question1", "question2" etc-->
-<!--3) Script supports unlmited # of questions. Be sure to edit .js file to enter corresponding solutions-->
+esponding solutions-->
 
 <p align="center">
 
 <form method="POST" name="myquiz">
 <center>
-<font face="Arial"><big><big>My Gym Game</big></big></font></p>
-
+<font face="Arial"><big><big>My Gym Game Quiz</big></big></font></p>
 <center>
 <div class="qheader">
 1) Αν κάποιος δεν παίρνει συμπληρώματα διατροφής δεν θα βελτιώσει την εικόνα του;</div>
@@ -48,6 +42,7 @@ document.cookie="ready=yes"
 <input type="radio" value="a" name="question1">Ναι<br>
 <input type="radio" value="b" name="question1">Οχι<br>
 </div>
+
 
 <br>
 
@@ -83,6 +78,7 @@ document.cookie="ready=yes"
 <input type="radio" value="b" name="question4">2<br>
 
 </div>
+
 <br>
 
 <div class="qheader">
@@ -92,6 +88,7 @@ document.cookie="ready=yes"
 <input type="radio" value="b" name="question5">Οχι<br>
 
 </div>
+
 <br>
 
 <div class="qheader">
@@ -112,6 +109,7 @@ document.cookie="ready=yes"
 
 </div>
 
+
 <br>
 
 <div class="qheader">
@@ -122,7 +120,6 @@ document.cookie="ready=yes"
 <input type="radio" value="b" name="question8">Μύθος<br>
 
 </div>
-
 <br>
 
 <div class="qheader">
@@ -138,14 +135,15 @@ document.cookie="ready=yes"
 
 </div>
 
+
 <br>
 
 <div class="qheader">
 
 <div class="qselections">
-<input type="radio" value="a" name="question10"> <br>
-<input type="radio" value="b" name="question10"> <br>
-<input type="radio" value="c" name="question10"> <br>
+<input type="radio" value="a" name="question10"><br>
+<input type="radio" value="b" name="question10"><br>
+<input type="radio" value="c" name="question10"><br>
 </div>
 
 </form>
@@ -164,4 +162,3 @@ Designed by
 <a href="https://www.instagram.com/vera_angelopoulou/">Barbara Angelopoulou</a></font></p>
 </body>
 </html>
-
