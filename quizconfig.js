@@ -66,7 +66,7 @@ else
 win2.document.write("Question "+i+"="+correctchoices[i]+"<br>")
 }
 win2.document.write('</center></font>')
-win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had incorrectly answered.</h5>")
+win2.document.write("<h5>Note for question 4: Μπορεί όλοι να λέμε plank, όμως plank είναι κυρίως όταν ακουμπάνε οι παλάμες! Η άσκηση που είδαμε λέγεται hover γιατί ακουμπάνε οι αγκώνες! Η Αντιγόνη είναι στο γυμναστήριο για να σε βοηθήσει να πετύχεις τη σωστή σανίδα αν δυσκολεύεσαι!</h5>")
 win2.document.close()
 }
 
